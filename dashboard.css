@@ -1,0 +1,618 @@
+body{   
+  overflow-x : hidden;  /* to hide the scroll bar in x axis */
+    background-color: #c6cdcddc;
+
+}    
+  
+  nav{
+      height:90px;
+      width:100%;
+      left:0px;
+      top:-2px;
+      background: #c6cdcddc;
+      list-style: none;
+      position:fixed;                                   /* to make it fixed and not move */
+      z-index: 1;                                      /* to make element appear on top/above of all other objects when scrolled */
+  }
+  
+  nav img{                             /* Edugo image */
+      position:absolute;                                /*  When you set an element to position: absolute;, it is removed from the normal document flow and positioned relative to the nearest positioned ancestor (which can be the body element) using the top, bottom, left, and right properties. */
+      top:25px;
+      left:17px;
+  }
+  
+  nav ul{                                  /* elements rankpredictor,exams,etc */
+      float:right;                         /* makes all elements to be placed one after other to right side of page */
+      margin-right:25px;
+  }
+  
+  nav ul li{
+      display:inline-block;
+      line-height:80px;                   /* underline when hovers */
+      margin:0 15px;
+  }
+  
+  nav ul li a
+  {
+      position: relative;
+      font-size:18px;
+      padding: 5px;
+      text-decoration: none;             /* no underline to anchor tags */
+      text-transform: uppercase;
+      color:black;
+  }
+  
+  nav ul li a select{                    /* dropdowns in li */
+    position:relative;
+    top:-2px;
+    width:15px;
+    border:none;
+    background-color: #c6cdcddc;
+  
+  }
+  
+  nav ul li a select option{
+    border-radius: 5px;
+    font-size: 17px;
+    
+  }
+  
+  .material-symbols-outlined {                /* google icons for person and logout */
+    padding:-5px;
+    position: relative;
+    top:7px;
+    left:-15px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  
+  nav ul li a:before{                    /*  you can use the ::before pseudo-element to add icons or other decorative elements to links or buttons, without having to modify the HTML content directly. */
+      position:absolute;                  /*  When you set an element to position: absolute;, it is removed from the normal document flow and positioned relative to the nearest positioned ancestor (which can be the body element) using the top, bottom, left, and right properties. */
+      content: '';
+      left:0;
+      bottom:0;
+      height: 3px;
+      width:100%;
+      background: rgb(40, 41, 41);
+      transform:scaleX(0);                /* This sets the horizontal scale of the element to 0, effectively making it invisible. */
+      transform-origin:right;             /* This sets the transform origin of the element to the right edge, which means that the element will scale outwards from the right edge as it becomes visible.  */
+      transition: transform .4s linear;   /* This sets up a transition for the transform property with a duration of 0.4 seconds and a linear timing function, which means that the scaling animation will happen smoothly and at a consistent speed. */
+  
+     /* Overall, this code block can be used to create an animation where an element scales in from the right edge of the screen. When the element is initially displayed, it will be invisible. As the element becomes visible (e.g. by changing its transform property to scaleX(1)), it will scale outwards from the right edge of the element. */
+  
+    }
+  
+  nav ul li a:hover:before{
+      transform:scaleX(1);                      /* This sets the horizontal scale of the element to 0, effectively making it visible. */
+      transform-origin:left;                    /* This sets the transform origin of the element to the left edge, which means that the element will scale outwards from the left to right edge as it becomes visible.  */
+    }
+  
+  /* By above two , we had underline over anchor tag elements  when hovers */
+  
+  
+  label #btn,label #cancel{                   /*   btn,class are id's*/
+    font-size: 30px;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display:none;             /*  elment is invisible */
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  .user-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-menu .user-profile {
+    display: flex;
+    position: relative;
+    left:10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  .user-menu .menu-options {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    
+    width: 150px;
+    padding: 10px;
+    background-color: #e2e7e7dc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  
+  }
+  
+  .user-menu .menu-options li {
+    margin-bottom: 5px;
+  }
+  
+  .user-menu .menu-options li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 2px;
+    line-height: 50px;
+    text-transform:capitalize ;
+  }
+  
+  .user-menu:hover .menu-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .details{
+    position:relative;
+    top:100px;
+    left:10px;
+    font-family: 'Comme', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size:18px;
+    background-color: white; 
+    display:inline-block;
+    padding:5px;
+    padding-left: 50px;
+    padding-bottom:50px;
+    border-radius: 100px;
+    width:500px;
+    border:100px solid black;
+    
+  }
+
+  .details table,tr,td{
+    line-height: 25px;
+  }
+
+  .details tr,td{
+    font-size:18px;
+  }
+  
+  .girl_image{
+    position:relative;
+    top:-300px;
+    left:370px;
+  
+    display: inline-block;
+    
+  }
+  
+  
+  @media(max-width:1350px){           /* when webpage is minimised to 1350px or less then the following properties are applied */
+    body{
+      background-position: 120px 50px; 
+    }
+    .container{                     /* for para and tagline to appear */
+        left:70px;
+      }
+      
+      
+      label #btn{                  
+        display: block;             /* this makes the other elements ecept btn to be invisble ,i.e., blocks other from viewing */
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height:100%;
+        background: #c6cdcddc;
+        top:80px;
+        left:-120%;
+        text-align: center;
+        transition: all .5s;             /* all elements transitions for 5 seconds */
+    }
+    nav ul li{
+        display: block;                     /* this makes the other elements ecept btn to be invisble ,i.e., blocks other from viewing */
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;    
+    }
+    
+    #check:checked ~ ul{        
+        left:0;
+    }
+    
+    #check:checked ~ label #btn{         /* used to hide an HTML element by completely removing it from the document flow, i.e., it takes up no space and is not clickable. The element is not visible on the page and is not part of the accessibility */
+        display : none; 
+    }
+    #check:checked ~ label #cancel{      /* when element with cancel btn is checked then it makes other elements to be blocked from view in that line , i.e., when cancel are seen then we can't see bars label */
+        display : block;                    /* if we use display:none here, then we can bars bcoz we get cancel label only after checking bars */
+    }
+  
+    .features h1{                       /* side headings .. y edugo ? explore exams */
+      position:relative;
+      left:70px;
+    }
+  
+    section {
+      display: grid;                 /* elements appear in rows and columns */
+      place-items: center;
+      align-content: center;
+      min-height: 50vh;             /* makes height of element to 50% viewport */
+    }
+  
+    .features .hidden_feature p{     /* this is to make para in this section apppear in square boxed format */
+      position:relative;
+      font-size:20px;
+      font-family: 'Courgette', cursive;
+      display: inline-block;            /* This means that the element will behave as an inline element in terms of horizontal flow, but as a block-level element in terms of vertical flow, allowing other elements to appear next to it horizontally while still maintaining block-level properties like being able to set a height and width, margins, and padding.   */
+      word-spacing: 5px;
+    }
+  
+    .features .hidden_feature img{      /* this is for images in this section */
+      width:500px;
+      height:300px;
+  
+    }
+    
+    .hidden_feature {
+      display:flex;                   /* used to create a flexible container to hold flex items. When applied to a parent element, it turns all of its immediate children into flexible items that can be arranged in any direction (horizontal or vertical), and can be aligned, spaced, and ordered as desired. */         
+      opacity: 0;                     /*  An opacity value of 0 means that the element is completely transparent and not visible. */
+      filter: blur(5px);              /* Applies a blur effect to the element. */
+      transform: translateX(-100%);   /*  Translates (moves) the element to the left by 100% of its own width, so it will be outside of the viewport. */
+      transition: all 5s;             /* Defines a transition effect that applies to all CSS properties and lasts for 5 seconds. This means that any change in these properties will be animated smoothly over the course of 5 seconds.  */
+      font-size: 17px;
+    }
+    
+    .show {
+      opacity: 1;                     /*  An opacity value of 1 means that the element is completely opaque and fully visible. */
+      filter: blur(0);                /* filter property to "blur(0)" which means no blur is applied to the element */
+      transform: translateX(0);       /*   transform property to "translateX(0)" which means the element is not translated horizontally. */
+    }
+  
+    footer .edugo{
+      position:relative;
+      left:-90px;
+    }
+  
+    footer .useful_links{
+      position:relative;
+      left:-150px;
+    }
+  
+    footer .services{
+      position:relative;
+      left:-250px;
+    }
+  
+    footer .social_apps{
+      position:relative;
+      left:100px;
+    }
+  
+  }
+  
+  @media (max-width:1200px){
+    body{
+      background-position: 100px 50px;
+    }
+    .container{
+        left:70px;
+      }
+      
+      
+      label #btn{
+        display: block;
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height:100%;
+        background: #c6cdcddc;
+        top:80px;
+        left:-120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;    
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+    #check:checked ~ label #btn{
+        display : none; 
+    }
+    #check:checked ~ label #cancel{
+        display : block;
+    }
+  
+    
+    .features h1{
+      position:relative;
+      left:70px;
+    }
+  
+    section {
+      display: grid;
+      place-items: center;
+      align-content: center;
+      min-height: 50vh;
+    }
+  
+    .features .hidden_feature p{
+      position:relative;
+      font-size:20px;
+      font-family: 'Courgette', cursive;
+      display: inline-block;
+      word-spacing: 5px;
+    }
+  
+    .features .hidden_feature img{
+      width:500px;
+      height:300px;
+  
+    }
+    
+    .hidden_feature {
+      display:flex;
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-100%);
+      transition: all 5s;
+      font-size: 17px;
+    }
+  
+  
+    
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+    
+  }
+  
+  
+  @media(max-width:1070px){
+    
+    body{
+      background-position: 100px 50px;
+    }
+    .container{
+        left:70px;
+      }
+      
+      
+      label #btn{
+        display: block;
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height:100%;
+        background: #c6cdcddc;
+        top:80px;
+        left:-120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;    
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+    #check:checked ~ label #btn{
+        display : none; 
+    }
+    #check:checked ~ label #cancel{
+        display : block;
+    }
+  
+    
+    .features h1{
+      position:relative;
+      left:70px;
+    }
+  
+    section {
+      display: grid;
+      place-items: center;
+      align-content: center;
+      min-height: 50vh;
+    }
+  
+    .features .hidden_feature p{
+      position:relative;
+      font-size:20px;
+      font-family: 'Courgette', cursive;
+      display: inline-block;
+      word-spacing: 5px;
+    }
+  
+    .features .hidden_feature img{
+      width:500px;
+      height:300px;
+  
+    }
+    
+    .hidden_feature {
+      display:flex;
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-100%);
+      transition: all 5s;
+      font-size: 17px;
+    }
+  
+  
+    
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  
+  }
+  
+  @media (max-width:1000px){
+    body{
+      background-position: 100px 50px;
+    }
+    .container{
+      position:relative;
+        left:90px;
+      }
+  
+    .container .tagline{
+      position:relative;
+      left:850px;
+      top:300px;
+    }
+      
+      
+      label #btn{
+        display: block;
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height:100%;
+        background: #c6cdcddc;
+        top:80px;
+        left:-120%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;    
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+    #check:checked ~ label #btn{
+        display : none; 
+    }
+    #check:checked ~ label #cancel{
+        display : block;
+    }
+  
+    .exams{
+      position:relative;
+      left:0px;
+    }
+  
+    .exams table{
+      position:relative;
+      left:20px;
+  
+    }
+  
+    
+    .features h1{
+      position:relative;
+      left:70px;
+    }
+  
+    section {
+      display: grid;
+      place-items: center;
+      align-content: center;
+      min-height: 50vh;
+    }
+  
+    .features .hidden_feature p{
+      position:relative;
+      font-size:12px;
+      font-family: 'Courgette', cursive;
+      display:inline-block;
+      text-align: justify;
+      word-spacing: 5px;
+      position:relative;
+      left:10px;
+     
+    }
+  
+    .features .hidden_feature img{
+      width:500px;
+      height:300px;
+  
+    }
+    
+    .hidden_feature {
+      display:flex;
+      opacity: 0;
+      filter: blur(5px);
+      transform: translateX(-100%);
+      transition: all 5s;
+      font-size: 17px;
+    }
+  
+    .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateX(0);
+    }
+  
+    footer .edugo{
+      position: relative;
+      left:-120px;
+    }
+  
+    footer .useful_links{
+      position: relative;
+      left:-220px;
+    }
+  
+    footer .services{
+      position: relative;
+      left:-350px;
+    }
+  
+    footer .social_apps{
+      position: relative;
+      left:-10px;
+    }
+  }
+  
+  
