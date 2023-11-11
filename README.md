@@ -30,3 +30,12 @@ Edugo is a comprehensive educational website dedicated to providing in-depth inf
 ## 3. Admin Dashboard
 - **User Management:** Admin can view and manage users registered for various exams.
 - **Content Updates:** Admin can add new information, and users interested in specific exams receive automatic notifications.
+
+# Technologies Used
+
+Edugo is built using a combination of web technologies to provide a dynamic and interactive educational experience. The front-end of the website is crafted using HTML for structuring content, CSS for styling and formatting, and JavaScript for adding dynamic and interactive features to web pages. On the server-side, PHP, a server-side scripting language, is employed for tasks such as interacting with databases and performing server-side processing. This technology stack forms the foundation of Edugo, ensuring a seamless and responsive user experience.
+
+# Database Used
+edugodb
+
+# Tables
