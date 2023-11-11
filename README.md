@@ -39,3 +39,7 @@ Edugo is built using a combination of web technologies to provide a dynamic and 
 edugodb
 
 # Tables
+
+**add_files**
+| 
+
