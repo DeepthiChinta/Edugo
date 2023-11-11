@@ -41,5 +41,6 @@ edugodb
 # Tables
 
 **add_files**
-| 
+
+| ID | DataType | 
 
