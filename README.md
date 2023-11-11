@@ -6,7 +6,7 @@ Edugo is a comprehensive educational website dedicated to providing in-depth inf
 
 # Key Features
 
-## 1.Exam Information Hub 
+- ## 1.Exam Information Hub 
 - **Eligibility Criteria:** Clear and concise details about the eligibility requirements for each exam.
 - **Syllabus:** Comprehensive breakdowns of the syllabus for thorough exam preparation.
 
@@ -22,11 +22,11 @@ Edugo is a comprehensive educational website dedicated to providing in-depth inf
 
 - **Registration Fees:** Information on the registration fees for each exam.
 
-## 2. User Personalisation 
+- ## 2. User Personalisation 
 - **User Accounts:** Users can create accounts and log in to customize their Edugo experience.
 - **Exam Selection:** Users can choose their exams of interest, tailoring the content to their needs.
 - **Email Notifications:** Subscribers receive timely notifications from the admin about updates related to their chosen exams.
 
-## 3. Admin Dashboard
+- ## 3. Admin Dashboard
 - **User Management:** Admin can view and manage users registered for various exams.
 - **Content Updates:** Admin can add new information, and users interested in specific exams receive automatic notifications.
