@@ -7,7 +7,7 @@ Edugo is a comprehensive educational website dedicated to providing in-depth inf
 # Key Features
 
 ## 1.Exam Information Hub 
-### Eligibility Criteria: Clear and concise details about the eligibility requirements for each exam.
+** Eligibility Criteria: ** Clear and concise details about the eligibility requirements for each exam.
 Syllabus: Comprehensive breakdowns of the syllabus for thorough exam preparation.
 Cutoff Marks: Previous year cutoff marks to provide a benchmark for aspiring candidates.
 Exam Dates: Up-to-date information on exam schedules to help users plan effectively.
