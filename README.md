@@ -48,13 +48,23 @@ edugodb
 | url | varchar(256) | not null |
 | title | varchar(256) | not null |
 
-## 
+## queries
 | ID | DATATYPE | INDEX |
 | --- | --- | --- |
-| score_3 | BIGINT | first round |
-| score_7 | BIGINT | second |
-| score_9 | BIGINT | third round |
-| score_11 | BIGINT | fourth round |
-| score_17 | BIGINT | fifth round |
+| id | varchar(256) | primary key |
+| username | varchar(256) | not null  |
+| email | varchar(256) | not null |
+| msg | varchar(256) | not null |
+
+## users 
+| ID | DATATYPE | INDEX |
+| --- | --- | --- |
+| id | varchar(256) | primary key |
+| username | varchar(256) | not null  |
+| email | varchar(256) | not null |
+| pswd | varchar(256) | not null |
+| FOI | varchar(256) | not null |
+
+
 
 
