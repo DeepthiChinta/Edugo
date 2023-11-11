@@ -40,16 +40,15 @@ edugodb
 
 # Tables
 
-## users
+## add_files
 | ID | DATATYPE | INDEX |
 | --- | --- | --- |
 | id | varchar(256) | primary key |
-| username | varchar(256) | not null  |
-| email | varchar(256) | not null |
-| pass | varchar(256) | not null |
-| total_score | INT | default = 0 |
-| total_time | INT | default = 0 |
-## score
+| exam | varchar(256) | not null  |
+| url | varchar(256) | not null |
+| title | varchar(256) | not null |
+
+## 
 | ID | DATATYPE | INDEX |
 | --- | --- | --- |
 | score_3 | BIGINT | first round |
